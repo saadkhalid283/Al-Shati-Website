@@ -46,7 +46,7 @@ export const moreServices = (L: Lang) => [
 export const trustBarData = (L: Lang) => [
   {
     icon: Award,
-    value: L === "ar" ? "+١٥" : "15+",
+    value: L === "ar" ? "+٢٥" : "25+",
     unit: L === "ar" ? "سنة" : "yrs",
     label: L === "ar" ? "خبرة في المجال" : "Years of Experience",
   },
@@ -71,7 +71,7 @@ export const trustBarData = (L: Lang) => [
 ];
 
 export const whyData = (L: Lang) => [
-  { icon: Award, stat: L === "ar" ? "+١٥ سنة" : "15+ yrs", label: L === "ar" ? "خبرة في المجال" : "Years of Experience" },
+  { icon: Award, stat: L === "ar" ? "+٢٥ سنة" : "25+ yrs", label: L === "ar" ? "خبرة في المجال" : "Years of Experience" },
   { icon: Zap, stat: L === "ar" ? "نفس اليوم" : "Same Day", label: L === "ar" ? "خدمة سريعة" : "Fast Service" },
   { icon: CircleDollarSign, stat: L === "ar" ? "شفافة" : "Honest", label: L === "ar" ? "أسعار واضحة" : "Transparent Pricing" },
   { icon: ShieldCheck, stat: L === "ar" ? "ضمان" : "Guaranteed", label: L === "ar" ? "ضمان على الإصلاح" : "Repair Guarantee" },
