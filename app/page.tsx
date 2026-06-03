@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { WhySection } from "@/components/WhySection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { Gallery } from "@/components/Gallery";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -98,6 +99,7 @@ export default function Home() {
       <ServicesSection {...siteProps} />
       <WhySection {...siteProps} />
       <HowItWorksSection L={L} />
+      <Gallery {...siteProps} />
       <ReviewsSection {...siteProps} />
       <ContactSection {...siteProps} />
       <CtaSection L={L} />

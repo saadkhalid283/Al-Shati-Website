@@ -1,5 +1,5 @@
-import { Phone, MapPin, Snowflake } from "lucide-react";
-import { PHONE_PRIMARY, PHONE_SECONDARY } from "@/lib/constants";
+import { Phone, MapPin, Snowflake, Instagram } from "lucide-react";
+import { PHONE_PRIMARY, PHONE_SECONDARY, INSTAGRAM_URL } from "@/lib/constants";
 import type { SiteProps } from "@/lib/site-props";
 
 export function Footer({ L, isAr, go }: SiteProps) {
@@ -190,6 +190,22 @@ export function Footer({ L, isAr, go }: SiteProps) {
               />
               {L.address}
             </div>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center lift"
+              style={{
+                gap: 9,
+                color: "rgba(255,255,255,0.65)",
+                fontSize: 14,
+                padding: "6px 0",
+                justifyContent: isAr ? "flex-end" : "flex-start",
+              }}
+            >
+              <Instagram size={14} color="var(--gold-2)" strokeWidth={1.75} />
+              {L.instagramLabel}
+            </a>
           </div>
         </div>
 

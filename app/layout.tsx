@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://al-shati-cooling.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://alshatiwebsite.vercel.app"
   ),
   title: "الشاطي للتبريد | Al-Shati Cooling - إصلاح مكيفات وثلاجات وغسالات في جدة",
   description:
@@ -29,6 +29,41 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  name: "الشاطي للتبريد | Al-Shati Cooling",
+  image: "/hero.jpg",
+  "@id": "https://alshatiwebsite.vercel.app",
+  url: "https://alshatiwebsite.vercel.app",
+  telephone: "+966580592468",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "7881 Prince Abdullah AlFaisal St, Ash Shamaliyah District",
+    addressLocality: "Jeddah",
+    postalCode: "23815",
+    addressCountry: "SA",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 21.7548009, longitude: 39.1046606 },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "00:00",
+    },
+  ],
+  sameAs: ["https://www.instagram.com/zohaibaliamir"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    bestRating: "5",
+    ratingCount: "21",
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" dir="rtl">
@@ -40,6 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
         <link rel="preload" as="image" href="/hero.jpg" fetchPriority="high" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>{children}</body>
     </html>

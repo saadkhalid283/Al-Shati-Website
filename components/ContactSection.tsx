@@ -1,5 +1,5 @@
-import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
-import { PHONE_PRIMARY, PHONE_SECONDARY, MAP_SRC, wa } from "@/lib/constants";
+import { Phone, MessageCircle, MapPin, Clock, Instagram } from "lucide-react";
+import { PHONE_PRIMARY, PHONE_SECONDARY, MAP_SRC, INSTAGRAM_URL, wa } from "@/lib/constants";
 import type { SiteProps } from "@/lib/site-props";
 import { SectionHead } from "./SectionHead";
 import { ContactRow } from "./ContactRow";
@@ -71,6 +71,17 @@ export function ContactSection({ L, isAr }: SiteProps) {
                   {L.waCardSub}
                 </div>
               </div>
+            </a>
+
+            {/* Instagram (secondary) */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="lift flex items-center justify-center insta-btn"
+            >
+              <Instagram size={18} strokeWidth={1.9} />
+              {L.followCta}
             </a>
           </div>
 

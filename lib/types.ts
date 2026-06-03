@@ -34,6 +34,11 @@ export interface Translations {
   localGuide: string;
   googleReviews: string;
   heroRating: string;
+  galleryEyebrow: string;
+  galleryTitle: string;
+  gallerySub: string;
+  instagramLabel: string;
+  followCta: string;
   ctaTitle: string;
   ctaSub: string;
   ctaWa: string;

@@ -256,7 +256,7 @@ export function Hero({ L }: { L: Translations }) {
         </div>
         <div>
           <div style={{ color: "#fff", fontWeight: 800, fontSize: 15, letterSpacing: "-0.01em" }}>
-            5.0 ★★★★★
+            4.9 ★★★★★
           </div>
           <div style={{ color: "rgba(255,255,255,0.72)", fontSize: 11, fontWeight: 600, marginTop: 1 }}>
             {L.heroRating}

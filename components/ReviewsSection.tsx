@@ -48,7 +48,7 @@ export function ReviewsSection({ L, isAr }: SiteProps) {
               letterSpacing: "-0.03em",
             }}
           >
-            5.0
+            4.9
           </div>
           <div
             style={{

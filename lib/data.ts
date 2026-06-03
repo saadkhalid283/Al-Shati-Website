@@ -109,3 +109,27 @@ export const reviewsData = [
     en: "Good work, great appointment times, and an excellent staff.",
   },
 ];
+
+export interface GallerySlide {
+  img: string;
+  ar: string;
+  en: string;
+}
+
+export const galleryData: GallerySlide[] = [
+  {
+    img: "/gallery-split-ac.jpg",
+    ar: "إصلاح وصيانة مكيفات السبليت",
+    en: "Split AC repair & maintenance",
+  },
+  {
+    img: "/gallery-central-ac.jpg",
+    ar: "صيانة وحدات التكييف المركزي والتبريد",
+    en: "Central AC & cooling unit service",
+  },
+  {
+    img: "/gallery-washer.jpg",
+    ar: "إصلاح الغسالات الأوتوماتيك والعادية",
+    en: "Automatic & regular washing machine repair",
+  },
+];

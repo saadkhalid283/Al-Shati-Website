@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, MessageCircle, Menu, X, Snowflake } from "lucide-react";
+import { Phone, MessageCircle, Menu, X, Snowflake, Globe } from "lucide-react";
 import { PHONE_PRIMARY, wa } from "@/lib/constants";
 import type { Translations } from "@/lib/types";
 
@@ -77,7 +77,13 @@ export function Navbar({ L, scrolled, active, onLangToggle, go }: NavbarProps) {
         </div>
 
         <div className="flex items-center" style={{ gap: 8 }}>
-          <button type="button" onClick={onLangToggle} className="btn-ghost lift">
+          <button
+            type="button"
+            onClick={onLangToggle}
+            className="btn-ghost lift lang-toggle"
+            aria-label="Switch language"
+          >
+            <Globe size={15} strokeWidth={2} />
             {L.langBtn}
           </button>
 
