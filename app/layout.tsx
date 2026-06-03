@@ -9,7 +9,7 @@ const SITE_URL =
 
 const TITLE_AR = "الشاطي للتبريد | إصلاح مكيفات وثلاجات وغسالات في جدة";
 const DESC_AR =
-  "الشاطي للتبريد في جدة: إصلاح وصيانة المكيفات (شباك، سبليت، مركزي)، الثلاجات والغسالات بخبرة تتجاوز 15 سنة. خدمة نفس اليوم، أسعار شفافة، وضمان على الإصلاح. تواصل واتساب أو اتصال.";
+  "الشاطي للتبريد في جدة: إصلاح وصيانة المكيفات (شباك، سبليت، مركزي)، الثلاجات والغسالات بخبرة تتجاوز 25 سنة. خدمة نفس اليوم، أسعار شفافة، وضمان على الإصلاح. تواصل واتساب أو اتصال.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "الشاطي للتبريد | إصلاح وصيانة المكيفات والثلاجات والغسالات في جدة",
     description:
-      "خبرة تتجاوز 15 سنة في إصلاح المكيفات والثلاجات والغسالات بجدة. خدمة نفس اليوم وضمان على الإصلاح.",
+      "خبرة تتجاوز 25 سنة في إصلاح المكيفات والثلاجات والغسالات بجدة. خدمة نفس اليوم وضمان على الإصلاح.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "الشاطي للتبريد - إصلاح وصيانة المكيفات والثلاجات والغسالات في جدة",
@@ -56,14 +56,19 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "الشاطي للتبريد | إصلاح مكيفات وثلاجات وغسالات في جدة",
     description:
-      "خبرة تتجاوز 15 سنة. خدمة نفس اليوم، أسعار شفافة، وضمان على الإصلاح في جدة.",
-    images: ["/og-image.png"],
+      "خبرة تتجاوز 25 سنة. خدمة نفس اليوم، أسعار شفافة، وضمان على الإصلاح في جدة.",
+    images: ["/og-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
+  manifest: "/site.webmanifest",
   formatDetection: { telephone: true, email: false, address: false },
   robots: {
     index: true,
@@ -112,8 +117,8 @@ const jsonLd = {
   alternateName: "Al-Shati Cooling",
   description: DESC_AR,
   url: SITE_URL,
-  image: `${SITE_URL}/og-image.png`,
-  logo: `${SITE_URL}/og-image.png`,
+  image: `${SITE_URL}/og-image.jpg`,
+  logo: `${SITE_URL}/og-image.jpg`,
   telephone: "+966580592468",
   priceRange: "$$",
   currenciesAccepted: "SAR",
@@ -121,7 +126,7 @@ const jsonLd = {
   knowsLanguage: ["ar", "en"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "7881 Prince Abdullah AlFaisal St, Ash Shamaliyah District",
+    streetAddress: "7891 Prince Abdullah AlFaisal St, Ash Shamaliyah District",
     addressLocality: "Jeddah",
     addressRegion: "Makkah Province",
     postalCode: "23815",
