@@ -24,9 +24,17 @@ export function GtagEvents() {
       if (href.startsWith("tel:")) {
         window.gtag("event", "generate_lead", { method: "phone_call" });
         window.gtag("event", "contact", { method: "phone_call" });
+        window.gtag("event", "conversion", {
+          send_to: "AW-18234387646/LarTCLGkzcMcEL7Z6vZD",
+          value: 1.0,
+          currency: "PKR",
+        });
       } else if (href.includes("wa.me")) {
         window.gtag("event", "generate_lead", { method: "whatsapp" });
         window.gtag("event", "contact", { method: "whatsapp" });
+        window.gtag("event", "conversion", {
+          send_to: "AW-18234387646/W4YsCN6N0cMcEL7Z6vZD",
+        });
       }
     }
 
