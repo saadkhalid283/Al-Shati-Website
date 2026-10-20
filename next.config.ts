@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: projectRoot,
   },
+  /* hide the "N" route badge in local development; it never shows on the live site */
+  devIndicators: false,
 };
 
 export default nextConfig;
