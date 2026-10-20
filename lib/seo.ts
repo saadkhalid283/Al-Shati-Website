@@ -6,9 +6,9 @@ const copy = {
   ar: {
     title: "الشاطئ للتبريد | تصليح غسالات وثلاجات ومكيفات في جدة",
     desc: "تصليح الغسالات والثلاجات والمكيفات في جدة، كل الماركات. فني نفس اليوم، أسعار واضحة وضمان على الإصلاح. أكثر من ٢٥ سنة. اتصل أو راسلنا واتساب.",
-    ogTitle: "الشاطئ للتبريد | إصلاح وصيانة المكيفات والثلاجات والغسالات في جدة",
-    ogDesc: "خبرة تتجاوز 25 سنة في إصلاح المكيفات والثلاجات والغسالات بجدة. خدمة نفس اليوم وضمان على الإصلاح.",
-    ogAlt: "الشاطئ للتبريد - إصلاح وصيانة المكيفات والثلاجات والغسالات في جدة",
+    ogTitle: "الشاطئ للتبريد | تصليح غسالات وثلاجات ومكيفات في جدة",
+    ogDesc: "أكثر من ٢٥ سنة نصلّح الغسالات والثلاجات والمكيفات في جدة. فني نفس اليوم، خدمة ٢٤/٧، وضمان على الإصلاح.",
+    ogAlt: "الشاطئ للتبريد، تصليح غسالات وثلاجات ومكيفات في جدة",
     locale: "ar_SA",
     altLocale: "en_US",
     template: "%s | الشاطئ للتبريد",
@@ -16,8 +16,8 @@ const copy = {
   en: {
     title: "Washer, Fridge & AC Repair in Jeddah | Al-Shati Cooling",
     desc: "Washing machine, fridge and AC repair in Jeddah. Every brand, same-day technician, clear prices and a guarantee. 25+ years. Call or WhatsApp.",
-    ogTitle: "Al-Shati Cooling | AC, Fridge & Washer Repair in Jeddah",
-    ogDesc: "25+ years repairing ACs, fridges and washing machines in Jeddah. Same-day service and a repair guarantee.",
+    ogTitle: "Al-Shati Cooling | Washer, Fridge & AC Repair in Jeddah",
+    ogDesc: "25+ years repairing washing machines, fridges and ACs in Jeddah. Same-day technician, 24/7 service and a repair guarantee.",
     ogAlt: "Al-Shati Cooling, AC, fridge and washing machine repair in Jeddah",
     locale: "en_US",
     altLocale: "ar_SA",
